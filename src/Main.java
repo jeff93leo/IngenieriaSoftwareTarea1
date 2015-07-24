@@ -19,6 +19,7 @@ public class Main {
     public static void main(String[] args) {
         // TODO code application logic here  int rol=0;
        Scanner sc = new Scanner(System.in);
+       Scanner s = new Scanner(System.in);
        int rol=0;  
         String menu="";
       do{
@@ -26,7 +27,7 @@ public class Main {
           menu+="--Buenos Dias----\n";
           menu+="ingrese 1 o 2, dependiedo su rol\n";
           menu+="¿A que rol de usuario pertenece?\n";
-          menu+="1. Empleado de cajan";
+          menu+="1. Empleado de caja\n";
           menu+="2. Administrador\n";
           menu+="3. Salir\n";
           menu+="Ingrese: ";
@@ -37,7 +38,17 @@ public class Main {
         
           switch(rol){
             case 1:
+               String NombreUsuario;
+               int ContraseñaUsuario;
                 System.out.println( "Empleado caja");
+                System.out.println("Ingrese usuario: ");
+                NombreUsuario = s.nextLine();
+                System.out.println("ingree contraseña: ");
+                ContraseñaUsuario=s.nextInt();
+                
+          
+              
+           
                 break;
             case 2:
                 System.out.println("Administrador");
